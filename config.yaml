@@ -25,3 +25,65 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: cnn
+      description: 查找CNN网络、目标检测和识别、笔迹鉴别的论文
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: convolutional neural network
+          keyword_cn: 卷积神经网络
+          query: convolutional neural network architectures for visual recognition
+        - keyword: deep learning
+          keyword_cn: 深度学习
+          query: deep learning models and methods
+        - keyword: image classification
+          keyword_cn: 图像分类
+          query: CNN-based image classification models
+        - keyword: object detection
+          keyword_cn: 目标检测
+          query: deep learning methods for object detection in images
+        - keyword: handwriting recognition
+          keyword_cn: 笔迹识别
+          query: handwriting recognition with deep neural networks
+        - keyword: handwriting verification
+          keyword_cn: 笔迹验证
+          query: handwriting verification and forensic writer discrimination
+      intent_queries:
+        - query: Look for studies using convolutional neural networks for image classification and object detection
+          query_cn: 查找使用卷积神经网络进行图像分类和目标检测的研究
+          enabled: true
+          source: manual
+          note: ''
+        - query: Papers about convolutional neural network architectures for object detection and recognition.
+          query_cn: 关于用于目标检测与识别的卷积神经网络架构的论文。
+          enabled: true
+          source: manual
+          note: ''
+        - query: Research on handwriting identification and writer verification using deep learning.
+          query_cn: 使用深度学习进行笔迹鉴别和书写者验证的研究。
+          enabled: true
+          source: manual
+          note: ''
+        - query: Methods combining CNN feature extraction with object detection and handwritten document analysis.
+          query_cn: 将CNN特征提取与目标检测及手写文档分析相结合的方法。
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-11-10T07:01:42.881Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
