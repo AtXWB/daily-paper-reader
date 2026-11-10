@@ -72,6 +72,60 @@ subscriptions:
           source: manual
           note: ''
       updated_at: '2026-11-10T07:01:42.881Z'
+    - tag: traffic-sign
+      description: 面向交通标志识别的 CNN、轻量化网络、浅层与深层特征融合、差分特征提取、注意力门控及低质量与细粒度鲁棒分类研究。
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: lightweight convolutional network
+          keyword_cn: 轻量化卷积网络
+          query: lightweight convolutional neural network for efficient traffic sign classification
+        - keyword: shallow deep feature fusion
+          keyword_cn: 浅层与深层特征融合
+          query: fusion of shallow and deep features for traffic sign recognition
+        - keyword: multi-scale feature fusion
+          keyword_cn: 多尺度特征融合
+          query: multi-scale feature fusion for traffic sign classification
+        - keyword: attention gating mechanism
+          keyword_cn: 注意力门控机制
+          query: attention and gating mechanisms for feature selection in traffic sign recognition
+        - keyword: edge texture feature extraction
+          keyword_cn: 边缘纹理特征提取
+          query: edge and texture feature extraction for traffic sign detail preservation
+        - keyword: robust traffic sign recognition
+          keyword_cn: 鲁棒交通标志识别
+          query: robust traffic sign recognition under illumination and contrast variations
+      intent_queries:
+        - query: >-
+            How can lightweight convolutional neural networks improve traffic sign recognition accuracy while reducing
+            computational cost?
+          query_cn: 轻量化卷积神经网络如何在降低计算成本的同时提升交通标志识别准确率？
+          enabled: true
+          source: manual
+          note: ''
+        - query: >-
+            Methods for fusing shallow and deep features to preserve small traffic sign details and improve
+            classification performance.
+          query_cn: 融合浅层与深层特征以保留小型交通标志细节并提升分类性能的方法。
+          enabled: true
+          source: manual
+          note: ''
+        - query: >-
+            Using central difference convolution with attention or gating to enhance edge and texture features for
+            traffic sign recognition.
+          query_cn: 利用中心差分卷积结合注意力或门控增强边缘纹理特征进行交通标志识别。
+          enabled: true
+          source: manual
+          note: ''
+        - query: >-
+            Robust fine grained traffic sign recognition for similar categories and degraded images with blur noise low
+            resolution or illumination changes.
+          query_cn: 面向相似类别及模糊、噪声、低分辨率或光照变化退化图像的鲁棒细粒度交通标志识别。
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-11-10T07:15:28.602Z'
 source_backends:
   arxiv:
     papers_table: arxiv_papers
