@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-15T23:16:59.590283+00:00",
-  "updated_date": "20261115",
+  "generated_at": "2026-11-17T02:38:02.259296+00:00",
+  "updated_date": "20261117",
   "carryover_days": 9,
   "tag_states": {
     "cnn": {
-      "updated_date": "20261115",
+      "updated_date": "20261117",
       "carryover_days": 9,
       "items": []
     },
     "traffic-sign": {
-      "updated_date": "20261115",
+      "updated_date": "20261117",
       "carryover_days": 9,
       "items": []
     }
